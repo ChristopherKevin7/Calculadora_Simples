@@ -31,6 +31,7 @@ public class App {
                 break;
 
             default :
+                System.out.println("Você não digitou uma operação valida!");
                 break;
         
         }
