@@ -5,8 +5,11 @@ public class App {
         Scanner input = new Scanner(System.in);
         calculadora c =new calculadora();
         String op;
+        int continuar;
+        continuar = 1;
 
         System.out.println("Bem vindo a calculadora de operações simples!");
+        while(continuar == 1){
         System.out.println("Digite um numero: ");
         c.setNum1(input.nextDouble());
         System.out.println("Digite o segundo numero: ");
@@ -33,7 +36,11 @@ public class App {
             default :
                 System.out.println("Você não digitou uma operação valida!");
                 break;
+            
+        }
         
+        System.out.println("Deseja continuar? (1 para continuar ou 0 para sair)");
+            continuar = input.nextInt();
         }
 
     }
